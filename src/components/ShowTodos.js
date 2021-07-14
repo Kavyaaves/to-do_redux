@@ -66,6 +66,19 @@ const ShowTodos = (props) => {
 							);
 					  })
 					: null}
+				{props.todos.length > 0 && sort === 'all'
+					? props.todos.map((item) => {
+							return (
+								<Todo
+									key={item.id}
+									item={item}
+									removeTodo={props.removeTodo}
+									updateTodo={props.updateTodo}
+									completeTodo={props.completeTodo}
+								/>
+							);
+					  })
+					: null}
 			</ul>
 		</div>
 	);
