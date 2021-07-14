@@ -54,7 +54,6 @@ body {
 .add-btn {
 	margin-left: 1rem;
 	background-color: var(--yellow);
-	color: #fce1fd;
 	border-radius: 50%;
 	border: 2px solid #e1ebfd;
 	font-size: 1.5rem;
@@ -65,6 +64,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	transition: transform 0.25s;
+	color: #e1ebfd;
 }
 
 .add-btn:hover {
